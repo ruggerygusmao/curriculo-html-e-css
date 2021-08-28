@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --color1: #19304f;
+    --color2: #ffffff;
+    --color3: #222222;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: #e8e5e5;
+}
+
+/*---- CONTAINER---*/
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* COMPONENTES DA PAG PRINCIPAL - ITEM 1*/
+
+#items1{
+    width: 55%;
+    height: 100%;
+    background-color: var(--color2);
+}
+.image-profile{
+    display: flex;
+    margin: 30px 0 0 60px;
+}
+#studdent-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    font-size: 1.4em;
+    color: var(--color1);
+}   
+#studdent-name p{
+    margin: 7px 0 0 7px;
+    color: var(--color1);
+    font-size: 18px;
+}
+
+.image-profile img{
+    width: 10vw;
+    border-radius: 100px;
+}
+
+.title-h3{
+    color: var(--color1);
+    font-size: 20px;
+    margin: 0 0 11px 0;
+}
+
+.texto{
+    font-size: 16px;
+    color: var(--color3);
+    text-align: justify;
+    line-height: 22px;
+    padding: 0 36px 0 0;
+}
+
+.margin-p{
+    margin: 36px 0 36px 65px;
+}
+
+.margin-li{
+    margin: 4px 0 4px 30px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+a:hover{
+    color: var(--color3);
+    text-decoration: underline;
+}
+
+/* COMPONENTES CONTATO E CONHECINMENTOS - ITEM 2*/
+
+#items2{
+    width: 25%;
+    background-color: var(--color1);
+}
+
+.contact, .skills{
+    margin: 30% 0 0 25%;
+    color: var(--color2);
+}
+
+.margin-li2{
+    margin-top: 7%;
+}
+
+.icons{
+    display: flex;
+    margin: 20px 0 0 30px;
+}
+
+.icons li img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.none-style{
+    list-style: none;
+}
+.list-skills li{
+    border-bottom: 2px solid #fff;
+    width: 65%;
+}
+
+/*----FOOTER----*/
+
+#footer1{
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+}
+
+#footer2{
+    margin-top: 90px;
+    color: var(--color1)
+}
+
+/*----RESPONSIVIDADE---*/
+
+@media (max-width:910px){
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    #items1{
+        width: 100%;
+    }
+
+    .margin-p{
+         margin: 36px 15px 36px 30px;
+    }
+
+    #studdent-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .image-profile{
+        margin-left: 15px;
+    }
+
+    .image-profile img{
+        width: 30vw;
+        border-radius: 180px;
+    }
+
+    #items2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact{
+        margin: 40px 0 0 110px;
+    }
+    
+    .skills{
+        margin: 50px 0 0 110px;
+    }
+    #footer1{
+        display: none;
+    }
+
+    #footer2{
+        text-align: center;
+        bottom: 0;
+        color: var(--color2);
+    }
+}
