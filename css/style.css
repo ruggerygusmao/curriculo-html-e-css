@@ -126,11 +126,13 @@ a:hover{
     background-color: var(--color1);
     color: var(--color2);
     text-align: center;
+    padding-bottom: 3px;
 }
 
 #footer2{
     margin-top: 90px;
-    color: var(--color1)
+    color: var(--color1);
+    padding-bottom: 7px;
 }
 
 /*----RESPONSIVIDADE---*/
